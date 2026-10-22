@@ -15,7 +15,7 @@ public static void main(String[] args) {
             list.add(num);
         } else {
             count++;
-        }
+      }
     }
 
     while (count > 0) {
