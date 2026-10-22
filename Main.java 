@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Main {
+public static void main(String[] args) {
+
+    int[] arr = {0, 1, 0, 3, 12};
+
+    ArrayList<Integer> list = new ArrayList<>();
+
+    int count = 0;
+
+    for (int num : arr) {
+        if (num != 0) {
+            list.add(num);
+        } else {
+            count++;
+        }
+    }
+
+    while (count > 0) {
+        list.add(0);
+        count--;
+    }
+
+    System.out.println(list);
+}
+
+}
